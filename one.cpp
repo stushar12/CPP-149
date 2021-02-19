@@ -75,16 +75,17 @@ int shortest_cycle(int n)
 int main()
 {
 	// Number of vertices
-	int n = 6;
-
-	// Add edges
-	Add_edge(5, 6);
-	Add_edge(1, 2);
-	Add_edge(1, 3);
-	Add_edge(2, 4);
-	Add_edge(2, 5);
-	Add_edge(4, 5);
-	Add_edge(5, 3);
+	int n = 7;
+ 
+    // Add edges
+    Add_edge(0, 6);
+    Add_edge(0, 5);
+    Add_edge(5, 1);
+    Add_edge(1, 6);
+    Add_edge(2, 6);
+    Add_edge(2, 3);
+    Add_edge(3, 4);
+    Add_edge(4, 1);
 
 	// Function call
 	cout << shortest_cycle(n);
